@@ -79,12 +79,18 @@ Recommended chain: Design → Eval → Build → Test → Review
 5. C1 write tests
 6. C3 review code
 
-### Step 7: Save plan
-Output to `.claude/artifacts/planning-{name}.md`
+### Step 7: Save plan (MANDATORY)
+**You MUST save the complete plan to a file before presenting it to the user.**
+1. Create directory `.claude/artifacts/` if it doesn't exist
+2. Use the Write tool to save the full plan to `.claude/artifacts/planning-{name}.md`
+   - Replace `{name}` with a short kebab-case project name (e.g., `planning-rag-chatbot.md`)
+3. Confirm the file path to the user after saving
+
+Do NOT skip this step. The plan must be persisted for later reference and execution.
 
 ## After Planning
 
-Offer execution choice:
+Tell the user where the plan was saved, then offer execution choice:
 
 **1. Subagent-Driven (this session)** — dispatch fresh subagent per task, review between tasks
 
