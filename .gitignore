@@ -1,0 +1,14 @@
+# Local Claude Code config
+.claude/settings.local.json
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Environment
+.env
+.env.*
+
+# Private docs
+docs/
